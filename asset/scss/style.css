@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(185, 223, 235);
+  height: 80px;
+}
+header .header-content {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-content .header-logo h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+header .header-content nav ul {
+  display: flex;
+  align-items: center;
+}
+header .header-content nav ul li {
+  margin-left: 15px;
+}
+header .header-content nav ul li a {
+  color: black;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+header .header-content .mobile-menu {
+  display: none;
+}
+header .header-content .mobile-menu button {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(185, 223, 235);
+  border: none;
+}
+header .header-content .mobile-menu button i {
+  font-size: 30px;
+  color: black;
+}
+
+.overlay-deactive {
+  transition: all 0.2s ease;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(206, 199, 199, 0.473);
+}
+.overlay-deactive .header-mobile-menu {
+  width: 70%;
+  height: 100%;
+  background-color: white;
+  padding: 30px;
+  position: relative;
+}
+.overlay-deactive .header-mobile-menu nav {
+  margin-top: 50px;
+}
+.overlay-deactive .header-mobile-menu nav ul {
+  display: flex;
+  flex-direction: column;
+}
+.overlay-deactive .header-mobile-menu nav ul li {
+  margin-bottom: 20px;
+  height: 40px;
+  width: 70%;
+  background-color: rgb(185, 223, 235);
+  border: 1px solid rgb(96, 209, 243);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.overlay-deactive .header-mobile-menu nav ul li a {
+  font-size: 20px;
+  color: black;
+}
+.overlay-deactive .header-mobile-menu #backbtn {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(185, 223, 235);
+  border: 1px solid rgb(96, 209, 243);
+}
+.overlay-deactive .header-mobile-menu #backbtn i {
+  font-size: 18px;
+}
+
+.overlay-active {
+  transition: all 0.2s ease;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(206, 199, 199, 0.473);
+}
+.overlay-active .header-mobile-menu {
+  width: 70%;
+  height: 100%;
+  background-color: white;
+  padding: 30px;
+  position: relative;
+}
+.overlay-active .header-mobile-menu nav {
+  margin-top: 50px;
+}
+.overlay-active .header-mobile-menu nav ul {
+  display: flex;
+  flex-direction: column;
+}
+.overlay-active .header-mobile-menu nav ul li {
+  margin-bottom: 20px;
+  height: 40px;
+  width: 70%;
+  background-color: rgb(185, 223, 235);
+  border: 1px solid rgb(96, 209, 243);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.overlay-active .header-mobile-menu nav ul li a {
+  font-size: 20px;
+  color: black;
+}
+.overlay-active .header-mobile-menu #backbtn {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(185, 223, 235);
+  border: 1px solid rgb(96, 209, 243);
+}
+.overlay-active .header-mobile-menu #backbtn i {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+  header .header-content nav {
+    display: none;
+  }
+  header .header-content .mobile-menu {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
