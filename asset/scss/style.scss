@@ -56,7 +56,6 @@ header{
 }
 .overlay{
     transition: transform 2s ease;
-    transform: translateX(-100%);
     position: fixed;
     top: 0;
     left: 0;
@@ -110,7 +109,7 @@ header{
     transform: translateX(-100%);
 }
 .active{
-    transform: translateX(0);
+    transform: translateX(1);
  }
 
 

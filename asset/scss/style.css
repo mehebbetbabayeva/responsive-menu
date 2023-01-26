@@ -54,7 +54,6 @@ header .header-content .mobile-menu button i {
 
 .overlay {
   transition: transform 2s ease;
-  transform: translateX(-100%);
   position: fixed;
   top: 0;
   left: 0;
@@ -108,7 +107,7 @@ header .header-content .mobile-menu button i {
 }
 
 .active {
-  transform: translateX(0);
+  transform: translateX(1);
 }
 
 @media screen and (max-width: 900px) {
